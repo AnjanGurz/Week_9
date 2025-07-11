@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: linear-gradient(135deg, #ffeaa7, #fab1a0, #81ecec);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  color: #2d3436;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d63031;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #2d3436;
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: #2d3436;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.menu-card {
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #6c5ce7;
+}
+
+.menu-card ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
